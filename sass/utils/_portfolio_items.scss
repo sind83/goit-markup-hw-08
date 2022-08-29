@@ -1,0 +1,98 @@
+@keyframes shadow {
+    0% {
+        box-shadow: 0;
+    }
+    100% {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio-list {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__item {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 370px;
+        &:hover {
+            animation-name: shadow;
+            animation-duration: 250ms;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+    }
+    &__picture {
+        max-width: 370px;
+        display: block;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: $letter-spacing-main-title;
+        color: $font-color-headers;
+    }
+    &__category {
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: $letter-spacing-one;
+        color: $font-color-text;
+    }
+    &__container {
+        padding: 20px 24px;
+        border-width: 1px;
+        border-color: $background-color-three;
+        border-style: solid;
+        border-top: none;
+        z-index: 20;
+    }
+    &__item-box {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            & .portfolio-list__item-cover {
+            transform: translateY(0);
+        }
+        }
+    }
+    &__item-cover {
+        position: absolute;
+        background-color: rgba(33, 150, 243, 0.9);
+        width: 370px;
+        height: 101%;
+        top: 0px;
+        justify-content: center;
+        z-index: 2;
+        transform: translateY(105%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 49px 45px 49px 24px;
+        justify-items: center;
+        color: $font-color-white;
+        letter-spacing: $letter-spacing-one;
+        line-height: 1.55;
+        font-size: 18px;
+        margin: 49xp 45px 49px 24px;
+    }
+}
+
+
+.container--space {
+    margin-bottom: 94px;
+    max-width: 1200px;
+}
+@media screen and (min-width:480px)//smartphone
+{
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+    
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+    
+}

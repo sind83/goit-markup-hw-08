@@ -1,0 +1,50 @@
+/*Styling box "czym się zajmujemy"*/
+
+.container--box-column {
+    
+    flex-direction: column;
+    margin-bottom: 94px;
+}
+.picture-box {
+   
+    justify-content: center;
+    display: none;
+    &__title {
+        display: none;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: $letter-spacing-one;
+        color: $font-color-headers;
+        margin-bottom: 50px;
+    }
+
+    &__picture {
+        max-width: 370px;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (min-width:480px)//smartphone
+{
+   
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+       .picture-box{
+         display: flex;
+         &__title{
+            display: block;
+         }
+    }
+}
+

@@ -1,0 +1,185 @@
+/*Footer*/
+.footer {
+    display: inline-flex;
+    background-color: $background-color-footer;
+    height: 603px;
+    width: 480px;
+    // margin: auto;
+    justify-content: center;
+   
+    &__style {
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+    }
+    &__logo {
+        padding-top: 60px;
+        margin: 0 0 20px 0;
+        text-align: center;
+       
+
+        &--decor {
+            color: $font-color-white;
+        }
+    }
+    &__address {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: $letter-spacing-one;
+    }
+    &__address-place {
+        color: $font-color-white;
+    }
+    &__address-link {
+        color: $font-footer-address-link;
+
+        &:hover,:focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            color: $font-color-menu-hover;
+        }
+    }
+    &__item-address{
+        &:nth-child(2) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+        letter-spacing: $letter-spacing-one;
+        }
+    }
+    &__join-us {
+        padding-top: 72px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $font-color-white;
+    }
+    &__socials-ico {
+        width: 20px;
+        height: 20px;
+    }
+    &__socials-box {
+        align-items: center;
+        padding-top: 20px;
+    }
+    &__icons-socials-grid {
+        display: flex;
+        justify-content: center;
+    }
+    &__icons-socials-item {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        fill: $icon-fill-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: rgba(100%, 100%, 100%, 10%);
+
+        &:hover, :focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #2196f3;
+            cursor: pointer;
+        }
+    }
+
+}
+.newsletter{
+    display: inline-block;
+    width: 480px;
+    &__title{
+        padding-top: 72px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $font-color-white;
+    
+    }
+    &__item{
+        display:block;
+        padding-top: 20px;
+        &>input{
+            margin-left: 15px;
+            padding-left: 16px;
+            min-width: calc(100% - 45px);
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background-color: $background-color-footer;
+        }
+        &:nth-child(3){
+            padding-left: 12px;
+        }
+    }
+
+}
+.button{
+    margin: auto;
+    padding: 10px 24px 10px 42px;
+    width: 205px;
+    height: 50px;
+    &__sendplane-ico{
+        width: 24px;
+        height: 24px;
+        padding-left: 24px;
+    }
+}
+@media screen and (min-width:480px)//smartphone
+{
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+    
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+    .footer{
+        display: block;
+        height: 252px;
+        width: 1600px;
+      
+        &__style{
+            flex-direction: row;
+            
+            
+
+        }
+        &__logo{
+            text-align: left;
+        }
+        &__address{
+            margin-left: 215px;
+            text-align: left;
+        }
+        &__join-us{
+            padding-left: 70px;
+            text-align: left;
+        }
+        &__socials-box{
+            padding-left: 70px;
+        }
+    }
+    .newsletter{
+        &__title{
+            padding-left: 78px;
+            text-align: left;
+        }
+        &__item{
+            display:inline-block;
+            padding-left: 70px;
+            &>input{
+                width: 358px;
+            }
+        }
+    }
+}

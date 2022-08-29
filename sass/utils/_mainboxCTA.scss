@@ -1,0 +1,60 @@
+.container--one {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/tlo_naglowka.jpg");
+    background-color: $background-color-one;
+
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.main-title {
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: $letter-spacing-main-title;
+    color: $font-color-white;
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 356px;
+    text-align: center;
+}
+.button {
+    border: none;
+    background-color: $font-color-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 42px;
+    color: $font-color-white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: $letter-spacing-main-title;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: #56b3ff;
+        transition-duration: 250ms;
+    }
+}
+
+@media screen and (min-width:480px)//smartphone
+{
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+    
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+    .main-title{
+    font-size: 44px;
+    max-width: 696px;
+    }
+}

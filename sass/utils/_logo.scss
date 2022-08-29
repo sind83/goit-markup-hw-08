@@ -1,0 +1,26 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: $letter-spacing-one;
+    margin: 24px 0 25px 15px;
+
+    &--decor {
+    color: $font-color-logo;
+}
+}
+@media screen and (min-width:480px)//smartphone
+{
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+    
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+    .logo{
+        margin: 24px 0 25px 215px;
+    }
+}

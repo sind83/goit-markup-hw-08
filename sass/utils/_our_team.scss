@@ -1,0 +1,118 @@
+/*Styling "nasz zespół*/
+.container{
+    &--our-team {
+        flex-direction: column;
+        background-color: $background-color-two;
+    }
+}
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: $letter-spacing-one;
+    color: $font-color-headers;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.our-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+    &__item {
+        margin-bottom: 30px;
+        width: 450px;
+        background: $background-color-body;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        text-align: center;
+
+        
+    }
+    &__member-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: $font-color-headers;
+        line-height: 1.1875;
+        letter-spacing: $letter-spacing-one;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__member-position {
+        font-size: 16px;
+        color: $font-color-text;
+        line-height: 1.1875;
+        letter-spacing: $letter-spacing-one;
+    }
+    &__picture {
+        max-width: 450px;
+    }
+
+    &__socials {
+        padding-top: 16px;
+        padding-bottom: 30px;
+    }
+    &__socials-grid {
+        display: flex;
+        justify-content: center;
+    }
+    &__socials-ico {
+        width: 20px;
+        height: 20px;
+    }
+    &__socials-grid-item {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        fill: $icon-base-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &:not(last-child) {
+            margin-right: 10px;
+        }
+        &:hover, :focus{
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            fill: $icon-fill-color;
+            background-color: #2196f3;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width:480px)//smartphone
+{
+    
+}
+@media screen and (min-width:768px)//tablet
+{
+    .our-team{
+        &__item{
+            max-width: 354px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+          &__picture {
+        max-width: 354px;
+    }
+    }
+}
+@media screen and (min-width:1200px)//PC and others big screens
+{
+    .our-team{
+        flex-wrap: nowrap;
+        &__item{
+            max-width: 270px;
+            &:nth-child(-n +3) {
+            margin-right: 30px;
+        }
+            margin-bottom: 30px;
+        }
+          &__picture {
+        max-width: 270px;
+    }
+    }
+}
