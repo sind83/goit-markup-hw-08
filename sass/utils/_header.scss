@@ -81,18 +81,27 @@
         display: inline;
     }
     .header{
-        width: 100%;
+        width: 768px;
         &__menu24px{
             display: none;
         }
     }
     .address{
         display: block;
+        &__link{
+            display: block;
+        }
     }
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
     .menu{
         margin-right: 301px;
+    }
+    .address{
+        display: block;
+        &__link{
+            display: inline-block;
+        }
     }
 }

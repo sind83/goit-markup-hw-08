@@ -1,14 +1,14 @@
 /*Styling box "czym się zajmujemy"*/
 
 .container--box-column {
-    
+    display: none;
     flex-direction: column;
     margin-bottom: 94px;
 }
 .picture-box {
-   
+   display: flex;
     justify-content: center;
-    display: none;
+    
     &__title {
         display: none;
         font-size: 36px;
@@ -40,8 +40,11 @@
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
-       .picture-box{
-         display: flex;
+    .container--box-column{
+        display: flex;
+    }  
+    .picture-box{
+         
          &__title{
             display: block;
          }

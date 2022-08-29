@@ -19,8 +19,9 @@ body {
     color: $font-color-headers;
     flex-direction: column;
     margin: auto;
-    align-items: center;
-    box-sizing: border-box;
+    // align-items: center;
+    align-content: center;
+    // box-sizing: border-box;
 }
 .container {
     max-width: 1600px;
@@ -28,6 +29,7 @@ body {
     display: flex;
     margin: auto;
     align-items: center;
+    justify-content: center; 
 }
 
 .section {
@@ -42,15 +44,17 @@ body {
 }
 @media screen and (min-width:768px)//tablet
 {
-    // .container{
+    .container{
     //     width: 1200px;
-        
-    // }
+    display: flex;
+       
+    }
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
     // .container{
-    //     width: 1600px;
+    //     // width: 1600px;
+    //     // display: inline;
     // }
     .section{
         padding: 94px 0px;
