@@ -13,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
+    justify-content: center;
     &__item {
         flex-basis: calc((100% - 60px) / 3);
         max-width: 370px;
@@ -94,5 +94,7 @@
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
-    
+    .portfolio-list{
+        justify-content: left;
+    }
 }

@@ -23,7 +23,8 @@ body {
     box-sizing: border-box;
 }
 .container {
-    width: 479px;
+    max-width: 1600px;
+    min-width: 320px;
     display: flex;
     margin: auto;
     align-items: center;
@@ -35,22 +36,22 @@ body {
 
 @media screen and (min-width:480px)//smartphone
 {
-    .container{
-       width: 768px;
-    }
+    // .container{
+    //    width: 768px;
+    // }
 }
 @media screen and (min-width:768px)//tablet
 {
-    .container{
-        width: 1200px;
+    // .container{
+    //     width: 1200px;
         
-    }
+    // }
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
-    .container{
-        width: 1600px;
-    }
+    // .container{
+    //     width: 1600px;
+    // }
     .section{
         padding: 94px 0px;
     }

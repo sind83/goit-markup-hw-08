@@ -1,11 +1,12 @@
 /*Styling for buttons group - portfolio site*/
 .portfolio-menu {
     padding-bottom: 16px;
-    margin-top: 94px;
-    margin-left: 215px;
-    margin-right: 215px;
-
+    margin-left: 15px;
+    margin-right: 8px;
+    margin-top: 60px;
+    
     &__btn {
+        margin-bottom: 15px;
         font-size: 16px;
         line-height: 1.625;
         letter-spacing: $letter-spacing-one;
@@ -38,5 +39,11 @@
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
-    
+    .portfolio-menu{
+        margin: auto;
+        margin-top: 94px;
+        &__btn{
+            margin-bottom: 0;
+        }
+    }
 }
