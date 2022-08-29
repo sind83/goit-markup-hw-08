@@ -6,11 +6,11 @@
     height: 600px;
     display: flex;
     flex-direction: column;
-    margin: auto;
     justify-content: center;
     align-items: center;
 }
 .main-title {
+    padding-top: 118px;
     font-size: 26px;
     line-height: 1.36;
     letter-spacing: $letter-spacing-main-title;
@@ -49,11 +49,14 @@
 }
 @media screen and (min-width:768px)//tablet
 {
-    
+     .main-title{
+    padding-top: 197px;
+     }
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
     .main-title{
+    padding-top: 200px;
     font-size: 44px;
     max-width: 696px;
     }

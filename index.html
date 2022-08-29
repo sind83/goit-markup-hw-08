@@ -25,9 +25,75 @@
                     ><span class="logo--decor">Web</span>Studio</a
                 >
                 <div class="header__menu24px">
-                    <svg class="header__menu24px-icon">
-                        <use href="images/icons.svg#menu_24px" />
-                    </svg>
+                    <button
+                        type="menu"
+                        class="menu-toggle js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                    >
+                        <svg class="header__menu24px-icon">
+                            <use href="images/icons.svg#menu_24px" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg class="mobile-menu__icon">
+                            <use href="images/icons.svg#icon-cross" />
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-menu">
+                        <li>
+                            <a href="index.html" class="mobile-menu__link">Agencja</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="mobile-menu__link">Kontakt</a>
+                        </li>
+                    </ul>
+                    <div >
+                        <ul class="address-mob-menu">
+                        <li class="address-mob-menu__tel">
+                        <a href="tel:+48111111111" ></a>
+                            +48 111 111 111</a
+                        >
+                        </li>
+                        <li class="address-mob-menu__email">
+                        <a
+                            href="mailto:info@devstudio.com"
+                            
+                        >
+                            info@devstudio.com</a
+                        >
+                        </li>
+                        </ul>
+                        <ul class="mob-menu-socials">
+                        <li>
+                            <a href="" class="mob-menu-socials__link">Instagram</a>
+                        </li>
+                        <li>
+                            <p class="mob-menu-socials__bar">|</p>
+                        </li>
+                        <li>
+                            <a href="" class="mob-menu-socials__link">Twitter</a>
+                        </li >
+                        <li>
+                            <p class="mob-menu-socials__bar">|</p>
+                        </li>
+                        <li>
+                            <a href="" class="mob-menu-socials__link">Facebook</a>
+                        </li>
+                        <li>
+                            <p class="mob-menu-socials__bar">|</p>
+                        </li>
+                        <li >
+                            <a href="" class="mob-menu-socials__link">LinkedIn</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
                 <nav class="navigation">
                     <ul class="menu">
@@ -740,5 +806,6 @@
             </ul>
         </footer>
         <script src="js/modal.js"></script>
+        <script src="js/mobile-menu.js"></script>
     </body>
 </html>
