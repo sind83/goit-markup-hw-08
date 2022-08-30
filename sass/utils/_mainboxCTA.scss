@@ -1,13 +1,22 @@
 .container--one {
     background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-        url("../images/tlo_naglowka.jpg");
+        url("../images/mobile_title_picture.jpg");
     background-color: $background-color-one;
-
-    height: 600px;
+    background-size: 480px 400px ;
+    max-width: 480px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container--one { 
+        background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/mobile_title_picture@x2.jpg");
+    }
+  }
 }
 .main-title {
     padding-top: 118px;
@@ -52,6 +61,27 @@
      .main-title{
     padding-top: 197px;
      }
+      .container--one{
+        background-size: 1600px 600px ;
+        max-width: 768px;
+        height: 400px;
+        background-size: 768px 400px ;
+        background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/tablet_title_picture.jpg");
+    }
+   
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container--one { 
+         max-width: 768px;
+        height: 400px;
+        background-size: 768px 400px ;
+        background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/tablet_title_picture@x2.jpg");
+    }
+  }
+
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {
@@ -60,4 +90,27 @@
     font-size: 44px;
     max-width: 696px;
     }
+    .container--one{
+        max-width:1600px ;
+        height: 600px;
+        background-size: 1600px 600px;
+        background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/tlo_naglowka.jpg");
+    }
+   
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container--one { 
+        max-width: 1600px;
+        height: 600px;
+        background-size: 1600px 600px;
+        background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url("../images/tlo_naglowka@x2.jpg");
+    }
+  }
 }
+
+  
+
+  

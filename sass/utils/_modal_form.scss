@@ -244,7 +244,24 @@
 }
 @media screen and (min-width:768px)//tablet
 {
-    
+    .modal-cont{
+        width: 528px;
+        height: 581px;
+    }
+    .form-modal{
+         &__title {
+        width: auto;
+         }
+         &>input{
+            width: 448px;
+         }
+         &>textarea{
+            width: 448px;
+        }
+    }   
+    .modal-backdrop{
+        width: 100%;
+    }
 }
 @media screen and (min-width:1200px)//PC and others big screens
 {

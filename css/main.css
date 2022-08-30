@@ -179,10 +179,12 @@ body {
   }
 }
 .container--one {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tlo_naglowka.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/tlo_naglowka.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile_title_picture.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/mobile_title_picture.jpg");
   background-color: #2f303a;
-  height: 600px;
+  background-size: 480px 400px;
+  max-width: 480px;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,6 +198,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .container--one .container--one {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile_title_picture@x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/mobile_title_picture@x2.jpg");
+  }
 }
 
 .main-title {
@@ -243,12 +251,45 @@ body {
   .main-title {
     padding-top: 197px;
   }
+  .container--one {
+    background-size: 1600px 600px;
+    max-width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet_title_picture.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/tablet_title_picture.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .container--one {
+    max-width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet_title_picture@x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/tablet_title_picture@x2.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-title {
     padding-top: 200px;
     font-size: 44px;
     max-width: 696px;
+  }
+  .container--one {
+    max-width: 1600px;
+    height: 600px;
+    background-size: 1600px 600px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tlo_naglowka.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/tlo_naglowka.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .container--one {
+    max-width: 1600px;
+    height: 600px;
+    background-size: 1600px 600px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tlo_naglowka@x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url("../images/tlo_naglowka@x2.jpg");
   }
 }
 /*Styling content of 4 boxes*/
@@ -865,6 +906,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer {
+    position: relative;
     display: block;
     height: 252px;
     width: 1600px;
@@ -875,28 +917,59 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .footer__logo {
     text-align: left;
+    padding-top: 60px;
   }
   .footer__address {
     margin-left: 215px;
     text-align: left;
+    position: relative;
   }
   .footer__join-us {
+    min-width: none;
+    padding-top: 72px;
     padding-left: 70px;
     text-align: left;
   }
   .footer__socials-box {
-    padding-left: 70px;
+    padding-left: 0px;
+  }
+  .footer__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__item--address {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .footer__item--socials {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .newsletter {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    width: auto;
   }
   .newsletter__title {
-    padding-left: 78px;
+    padding-left: 15px;
     text-align: left;
   }
   .newsletter__item {
-    display: inline-block;
-    padding-left: 70px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .newsletter__item > input {
     width: 358px;
@@ -1319,6 +1392,24 @@ body {
 }
 
 /* ----- END Styling FORM of modal window ---------------*/
+@media screen and (min-width: 768px) {
+  .modal-cont {
+    width: 528px;
+    height: 581px;
+  }
+  .form-modal__title {
+    width: auto;
+  }
+  .form-modal > input {
+    width: 448px;
+  }
+  .form-modal > textarea {
+    width: 448px;
+  }
+  .modal-backdrop {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-cont {
     width: 528px;
