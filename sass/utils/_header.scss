@@ -16,12 +16,12 @@
 }
 
 .header {
-    width: 479px;
+    width: 100%;
     display: flex;
-    align-items: center;
+    //align-items: center;
     background-color: $font-color-white;
     border-bottom: 1px solid $borded-heder-color;
-    justify-content: space-between;
+    justify-content: left;
     &__menu24px{
         display:block;
     }

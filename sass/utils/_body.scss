@@ -19,12 +19,10 @@ body {
     color: $font-color-headers;
     flex-direction: column;
     margin: auto;
-    // align-items: center;
     align-content: center;
-    // box-sizing: border-box;
 }
 .container {
-    max-width: 1600px;
+    //max-width: 1600px;
     min-width: 320px;
     display: flex;
     margin: auto;

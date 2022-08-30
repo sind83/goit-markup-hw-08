@@ -217,11 +217,12 @@
         position: relative;
         display: block;
         height: 252px;
+        min-width: 1200px;
         width: 1600px;
       
         &__style{
             flex-direction: row;
-            width: 100%;
+            min-width: 1200px;
             display: flex;
 
         }
