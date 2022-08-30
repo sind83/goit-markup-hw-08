@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
+    min-width: calc(100% - 20px);
     height: 100%;
     z-index: 500;
     background-color: rgba(0, 0, 0, 0.2);
@@ -16,7 +16,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 360px;
+    min-width: calc(100% - 30px);
     height: 609px;
     border-radius: 4px;
     transform: translate(-50%, -50%);
@@ -122,7 +122,7 @@
     }
     }
     &__title {
-        min-width: 320px;
+        min-width: calc(100% - 30px);
         margin-top: 40px;
         text-align: center;
         font-weight: 700;

@@ -3,8 +3,10 @@
     display: flex;
     margin: 0 15px;
     flex-direction:column;
+    box-sizing: border-box;
+    justify-content: center;
     // flex-flow: row;
-    max-width: 480px;
+    max-width: 100%;
     
     &__item{
         
@@ -31,7 +33,7 @@
         line-height: 1.71;
         letter-spacing: $letter-spacing-one;
         color: $font-color-text;
-        max-width: 480px;
+        max-width: 100%;
 }
 
 }
@@ -58,7 +60,7 @@
 
 .four-boxes__icon {
     background-color: $icon-backgroud-color-box;
-    padding: 25px 190px;
+    padding: 25px 45%;
     height: 70px;
     width: 70px;
 }

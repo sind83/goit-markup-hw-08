@@ -298,7 +298,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
 }
 .four-boxes__item {
   margin-right: 30px;
@@ -323,7 +328,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  max-width: 480px;
+  max-width: 100%;
 }
 
 .picture-box__item {
@@ -347,7 +352,7 @@ body {
 /* Style for icons */
 .four-boxes__icon {
   background-color: #f5f4fa;
-  padding: 25px 190px;
+  padding: 25px 45%;
   height: 70px;
   width: 70px;
 }
@@ -485,7 +490,7 @@ body {
 }
 .our-team__item {
   margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -508,7 +513,7 @@ body {
   letter-spacing: 0.03em;
 }
 .our-team__picture {
-  max-width: 450px;
+  max-width: 100%;
 }
 .our-team__socials {
   padding-top: 16px;
@@ -605,9 +610,9 @@ body {
   fill: #afb1b8;
 }
 .our-clients__item {
-  width: 210px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  max-width: 210px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -624,7 +629,7 @@ body {
   margin-right: 0px;
 }
 .our-clients__box {
-  width: 480px;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,7 +640,7 @@ body {
 .our-clients__logo {
   max-width: 106px;
   height: 60px;
-  padding: 16px 52px;
+  padding: 16px 24px;
 }
 
 /* $$- END Our Clients / Nasi klienci$$- */
@@ -684,7 +689,7 @@ body {
   display: inline-flex;
   background-color: #2f303a;
   height: 603px;
-  width: 480px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -697,6 +702,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 100%;
 }
 .footer__logo {
   padding-top: 60px;
@@ -786,7 +792,7 @@ body {
 
 .newsletter {
   display: inline-block;
-  width: 480px;
+  min-width: 100%;
 }
 .newsletter__title {
   padding-top: 72px;
@@ -1137,7 +1143,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
+  min-width: calc(100% - 20px);
   height: 100%;
   z-index: 500;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1151,7 +1157,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 360px;
+  min-width: calc(100% - 30px);
   height: 609px;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
@@ -1268,7 +1274,7 @@ body {
   color: rgba(33, 33, 33, 0.5);
 }
 .form-modal__title {
-  min-width: 320px;
+  min-width: calc(100% - 30px);
   margin-top: 40px;
   text-align: center;
   font-weight: 700;
